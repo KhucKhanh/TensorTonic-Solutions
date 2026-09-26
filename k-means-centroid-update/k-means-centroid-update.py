@@ -18,5 +18,5 @@ def k_means_centroid_update(points: list, assignments: list, k: int) -> list:
             answer = sum1[i] / intcheck[i]
             list1.append(answer.tolist())
         else:
-            list1.append([0, 0])
+            list1.append([0] * points.shape[1])
     return list1 
